@@ -51,7 +51,7 @@ class _PokemonListesiState extends State<PokemonListesi> {
                     return InkWell(
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => PokemonDetay(
+                            builder: (context) => PokemonDetail(
                                 pokemon: gelenPokedex.data.pokemon[index])));
                       },
                       child: Hero(
@@ -73,7 +73,7 @@ class _PokemonListesiState extends State<PokemonListesi> {
                                             .data.pokemon[index].img)),
                                 Padding(
                                   padding:
-                                      const EdgeInsets.symmetric(vertical: 30),
+                                      const EdgeInsets.symmetric(vertical: 10),
                                   child: Text(
                                     gelenPokedex.data.pokemon[index].name,
                                     style: TextStyle(
